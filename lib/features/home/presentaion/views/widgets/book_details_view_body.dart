@@ -2,6 +2,8 @@ import 'package:bookly/core/utiles/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import 'book_rating.dart';
+import 'books_action.dart';
 import 'custom_book_details_appbar.dart';
 import 'custom_book_image.dart';
 
@@ -10,7 +12,10 @@ class BookDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var width = MediaQuery.of(context).size.width;
+    var width = MediaQuery
+        .of(context)
+        .size
+        .width;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 30.0),
       child: Column(
@@ -33,6 +38,10 @@ class BookDetailsViewBody extends StatelessWidget {
               style: Styles.textStyle18.copyWith(fontStyle: FontStyle.italic),
             ),
           ),
+          Gap(16),
+          BookRating(mainAxisAlignment: MainAxisAlignment.center,),
+          Gap(30),
+          BookAction(),
         ],
       ),
     );
