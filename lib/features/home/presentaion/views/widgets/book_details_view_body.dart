@@ -1,4 +1,5 @@
 import 'package:bookly/core/utiles/styles.dart';
+import 'package:bookly/features/home/presentaion/views/widgets/similar_book_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -38,12 +39,25 @@ class BookDetailsViewBody extends StatelessWidget {
               style: Styles.textStyle18.copyWith(fontStyle: FontStyle.italic),
             ),
           ),
-          Gap(16),
-          BookRating(mainAxisAlignment: MainAxisAlignment.center,),
-          Gap(30),
-          BookAction(),
+          const Gap(16),
+          const BookRating(mainAxisAlignment: MainAxisAlignment.center,),
+          const Gap(30),
+          const BookAction(),
+          const Gap(40),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text("You can also Like", style: Styles.textStyle14.copyWith(
+              fontWeight: FontWeight.w600,
+            ),),
+          ),
+          const Gap(16),
+          SimilarBookListView(),
+          const Gap(9),
+
+
         ],
       ),
     );
   }
 }
+
