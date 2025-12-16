@@ -37,6 +37,6 @@ flutter:
   fonts:
     - family: GTSectraFine
       fonts:
-        - asset: assets/fonts/GT Sectra Fine Regular.ttf
+        - asset: assets/fonts/GTSectraFine-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
